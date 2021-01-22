@@ -1,3 +1,7 @@
+
+
+// Declared kilometerToMeter function for converting km to meter
+
 function kilometerToMeter(value) {
     if (value > 0) {
         var meter = value * 1000;
@@ -8,8 +12,8 @@ function kilometerToMeter(value) {
     }
 }
 
-var results = kilometerToMeter(2.5);
-//console.log(results);
+
+// Declared budgetCalculator for calculating cost
 
 function budgetCalculator(watch, phone, laptop) {
     var numberOfwatch = Math.round(watch);
@@ -23,8 +27,8 @@ function budgetCalculator(watch, phone, laptop) {
     }
 }
 
-var totalCost = budgetCalculator(1.3, 5, 2);
-//console.log(totalCost);
+
+// Declared hotelCost function for calculate total hotel living cost
 
 function hotelCost(value) {
     var totalCost = 0;
@@ -52,8 +56,8 @@ function hotelCost(value) {
 
 }
 
-var holetTotalCost = hotelCost(121);
-//console.log(holetTotalCost);
+
+// Declared megaFunction for return largest array element
 
 function megaFriend(friends) {
     var longName = [0];
