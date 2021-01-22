@@ -1,3 +1,4 @@
+// https://github.com/jishnu02180/problem-solving
 
 
 // Declared kilometerToMeter function for converting km to meter
@@ -11,6 +12,7 @@ function kilometerToMeter(value) {
         return 'Distance can not be negative';
     }
 }
+
 
 
 // Declared budgetCalculator for calculating cost
@@ -73,8 +75,4 @@ function megaFriend(friends) {
         return 'Please input a valid array';
     }
 }
-
-var friends = ["jishnu","Paikgacha khulna","Dola Mandal",9];
-var results = megaFriend(friends);
-console.log(results);
 
