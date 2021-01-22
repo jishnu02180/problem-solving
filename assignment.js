@@ -4,23 +4,26 @@ function kilometerToMeter(value) {
         return meter;
     }
     else {
-        return 'please input the positive value';
+        return 'Distance can not be negative';
     }
 }
 
-var results = kilometerToMeter(2);
+var results = kilometerToMeter(2.5);
 //console.log(results);
 
 function budgetCalculator(watch, phone, laptop) {
-    if (watch > 0 && phone > 0 && laptop > 0) {
-        var total = watch * 50 + phone * 100 + laptop * 500;
+    var numberOfwatch = Math.round(watch);
+    var numberOfPhone = Math.round(phone);
+    var numberOfLaptop = Math.round(laptop);
+    if (numberOfwatch > 0 && numberOfPhone > 0 && numberOfLaptop > 0) {
+        var total = numberOfwatch * 50 + numberOfPhone * 100 + numberOfLaptop * 500;
         return total;
     } else {
-        return 'please input the positive value';
+        return 'Number of watch, phone and laptop should be greater 0';
     }
 }
 
-var totalCost = budgetCalculator(3, -5, 2);
+var totalCost = budgetCalculator(1.3, 5, 2);
 //console.log(totalCost);
 
 function hotelCost(value) {
@@ -36,20 +39,20 @@ function hotelCost(value) {
             return totalCost;
 
         } else {
-            var first_10_days = 10 * 100;
-            var last_10_days = 10 * 80;
-            var remainsDays = value - 20;
-            var lastRemainDays = remainsDays * 50;
-            totalCost = first_10_days + last_10_days + lastRemainDays;
+            var firstTenDaysCost = 10 * 100;
+            var lastTenDaysCost = 10 * 80;
+            var remaingsDays = value - 20;
+            var lastRemaingDaysCost = remaingsDays * 50;
+            totalCost = firstTenDaysCost + lastTenDaysCost + lastRemaingDaysCost;
             return totalCost;
         }
     } else {
-        return 'Please input a positive value';
+        return 'Cost can not be negative value';
     }
 
 }
 
-var holetTotalCost = hotelCost(12);
+var holetTotalCost = hotelCost(121);
 //console.log(holetTotalCost);
 
 function megaFriend(friends) {
@@ -67,7 +70,7 @@ function megaFriend(friends) {
     }
 }
 
-var friends = ["jishnu","sardar"];
+var friends = ["jishnu","Paikgacha khulna","Dola Mandal",9];
 var results = megaFriend(friends);
 console.log(results);
 
